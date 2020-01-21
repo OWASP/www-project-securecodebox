@@ -1,53 +1,45 @@
 ---
-
 layout: col-sidebar
-title: OWASP Securecodebox
-tags: example-tag
+title: OWASP secureCodeBox
+tags: scanner
 level: 0
 type: tool
-
-auto-migrated: 1
-
 ---
 
+![OWASP_Project_Header.jpg](OWASP_Project_Header.jpg "OWASP_Project_Header.jpg")
 
-<!-- Standard Chapter Page Template
-This is an example of a Project or Chapter page.
-Please change these items to indicate the actual information you wish to present. In addition to this information, the 'front-matter' above the text should be modified to reflect your actual information.  An explanation of each of the front-matter items is below:
+![Logo_secureCodeBox.png](Logo_secureCodeBox.png "Logo_secureCodeBox.png") The OWASP secureCodeBox Project is a **docker based, modularized toolchain** for _continuous security scans of your software project_. Its goal is to _orchestrate_ and easily _automate_ a bunch of _security-testing tools_ out of the box. With the secureCodeBox we provide a toolchain for continuous scanning of applications to find the low-hanging fruit issues early in the development process and free the resources of the penetration tester to concentrate on the major security issues.
 
-{front matter for this file}
+## Description
 
-```
-- layout: This is the layout used by project and chapter pages.  You should leave this value as col-sidebar
-- title: This is the title of your project or chapter page, usually the name.  For example, OWASP Zed Attack Proxy or OWASP Baltimore
-- tags: This is a space-delimited list of tags you associate with your project or chapter.  If you are using tabs, at least one of these tags should be unique in order to be used in the tabs files (an example tab is included in this repo) 
-- region: This is the region you are in according to our data
-```
+The purpose of secureCodeBox is not to replace the penetration testers or make them obsolete. We strongly recommend to run extensive tests by experienced penetration testers on all your applications. For more informations about this project please have look at our [GitHub Repo](https://github.com/secureCodeBox/secureCodeBox)
+    
+Our main goal is to implement a major security testing platform and framework which enables developers and teams to integrate a bunch of security testing tools in their CI/CD environment as easy as possible. The flexibility and scalability of the platform architecture leads to features like _multi tenancy support_, _large scale (multi-) project testing_, support of distributed and private networks, customisable security test flows,... which enables projects to test complex environments without implementing the complete security testing infrastructure on their own.
 
-{copy for this file (index.md)}
-Replace the text above the commented area with your information in the format below:
-```
-## Welcome
-Include some information here about your chapter
+Secondly we try to foster a broad range of security tools to be easily integrated. Also we will try to integrate existing OWASP Projects as building blocks in our platform.
 
-## Participation
-The Open Web Application Security Project (OWASP) is a nonprofit foundation that works to improve the security of software. All of our projects ,tools, documents, forums, and chapters are free and open to anyone interested in improving application security. 
+## Roadmap 
 
-Chapters are led by local leaders in accordance with the [Chapter Leader Handbook](/www-policy/rules-of-procedure/chapter-handbook). Financial contributions should only be made online using the authorized online donation button. To be a SPEAKER at ANY OWASP Chapter in the world simply review the [speaker agreement](/www-policy/speaker-agreement) and then contact the local chapter leader with details of what OWASP Project, independent research, or related software security topic you would like to present.
+As of **Mai, 2019, the highest priorities for the next 6 months** are:
 
-Everyone is welcome and encouraged to participate in our [Projects](/projects), [Local Chapters](/chapters), [Events](/events), [Online Groups](https://groups.google.com/a/owasp.com/){:target='_blank'}, and [Community Slack Channel](https://owasp.slack.com/){:target='_blank'}. We especially encourage diversity in all our initiatives. OWASP is a fantastic place to learn about application security, to network, and even to build your reputation as an expert. We also encourage you to be [become a member](/membership) or consider a [donation](/donate) to support our ongoing work.
+- Finalize the integration with the OWASP DefectDojo Project, as a building block for security finding analytics
+- Enhance the multi tenant support
+- Migrate the deployment setup to Kubernetes, based on terraform for provisioning
+- Implement a UI for the Project based on the existing secureCodeBox API
+- Integrate a new REST API security scanner
 
-## Local News
-- Meeting Location
-- Everyone is welcome to join us at our chapter meetings.
+**Future milestones in general are**:
 
-```
-{info.md}
+- Adapt a serverless infrastructure architecture for the security scanner microservices
+- Migrate the process engine (Camunda) to a more lightweight technology (Zeebe.io maybe)
 
-This separate file is where you should place links to your Google Group and Meetup page. It will be automatically rendered in the column sidebar.
+## Licensing
 
-{leaders.md}
+This Project is free software: you can redistribute it and/or modify it under the terms of the [Apache License 2.0](https://github.com/secureCodeBox/secureCodeBox/blob/master/LICENSE). OWASP secureCodeBox Project and any contributions are Copyright © by {the Project Leader(s) or OWASP} {Year(s)}.
 
-Another separate file that should simply include each leaders name with mailto link as a list. It will also be automatically rendered in the column sidebar.
+__NOTOC__ <headertabs />
 
--->
+[Category:OWASP Project](Category:OWASP_Project "wikilink")
+[Category:OWASP_Builders](Category:OWASP_Builders "wikilink")
+[Category:OWASP_Defenders](Category:OWASP_Defenders "wikilink")
+[Category:OWASP_Tool](Category:OWASP_Tool "wikilink")
