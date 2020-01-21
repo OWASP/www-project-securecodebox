@@ -6,8 +6,6 @@ level: 0
 type: tool
 ---
 
-![OWASP_Project_Header.jpg](OWASP_Project_Header.jpg "OWASP_Project_Header.jpg")
-
 ![Logo_secureCodeBox.png](Logo_secureCodeBox.png "Logo_secureCodeBox.png") The OWASP secureCodeBox Project is a **docker based, modularized toolchain** for _continuous security scans of your software project_. Its goal is to _orchestrate_ and easily _automate_ a bunch of _security-testing tools_ out of the box. With the secureCodeBox we provide a toolchain for continuous scanning of applications to find the low-hanging fruit issues early in the development process and free the resources of the penetration tester to concentrate on the major security issues.
 
 ## Description
