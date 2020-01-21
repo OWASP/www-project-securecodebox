@@ -1,12 +1,14 @@
 ### Leaders
 
-* [Robert Seedorff](mailto:robert.seedorff@owasp.org)
+* [Robert Seedorff](https://github.com/rseedorff)
 
 ### Maintainers
 
-* [Jannik Hollenbach](User:J12934 "wikilink")
+* [Jannik Hollenbach](https://github.com/J12934)
 
 ### Contributer
 
-* [Timo Pagel](User:Timo_Pagel "wikilink")
-* [Benjamin Pfänder](User:Benjamin_Pfänder "wikilink")
+* [Timo Pagel](https://github.com/wurstbrot)
+* [Benjamin Pfänder](https://github.com/bpfaender)
+* [Yannik Fuhrmeister](https://github.com/fuhrmeistery)
+* [Sven Strittmatter](https://github.com/Weltraumschaf)
