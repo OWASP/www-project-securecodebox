@@ -15,11 +15,11 @@
 
 ### Integrated Projects
 
-- [OWASP JuiceShop Project](OWASP_Juice_Shop_Project)
-- [OWASP Zed Attack Proxy Project](OWASP_Zed_Attack_Proxy_Project "wikilink")
-- [OWASP DefectDojo Project](OWASP_DefectDojo_Project "wikilink")
+- [OWASP JuiceShop Project](https://owasp.org/www-project-juice-shop/)
+- [OWASP Zed Attack Proxy Project](https://owasp.org/www-project-zap)
+- [OWASP DefectDojo Project](https://owasp.org/www-project-defectdojo)
 
 ### Related Projects
 
-- [OWASP DevSlop Project](OWASP_DevSlop_Project "wikilink")
-- [OWASP Glue Tool Project](OWASP_Glue_Tool_Project "wikilink")
+- [OWASP DevSlop Project](https://owasp.org/www-project-devslop)
+- [OWASP Glue Tool Project](https://owasp.org/www-project-glue-tool)
