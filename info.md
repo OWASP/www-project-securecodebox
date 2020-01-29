@@ -10,7 +10,7 @@
 - [Documentation](https://securecodebox.github.io/secureCodeBox/)
 - [Issue Tracker](https://github.com/secureCodeBox/secureCodeBox/issues)
 - [Website](https://www.secureCodeBox.io)
-- [Slack](https://join.slack.com/t/securecodebox/shared_invite/enQtNDU3MTUyOTM0NTMwLTJiNzg3MmU2ZDY2NDFiMGI0Y2FkM2I5Mzc2ZmEzYTcyN2FlN2Y2NDFiZDE5NjAxMjg1M2IxNDViNzE3OTIxMGU)
+- [Slack](https://join.slack.com/t/securecodebox/shared_invite/enQtNDU3MTUyOTM0NTMwLTBjOWRjNjVkNGEyMjQ0ZGMyNDdlYTQxYWQ4MzNiNGY3MDMxNThkZjJmMzY2NDRhMTk3ZWM3OWFkYmY1YzUxNTU)
 - [Twitter](https://twitter.com/secureCodeBox)
 
 ### Integrated Projects
