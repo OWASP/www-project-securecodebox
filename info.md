@@ -1,8 +1,7 @@
-<!-- ### Project Information
+### Project Information
 
-* Project Level
-* Project Type
-* Version, etc -->
+* Project Incubator
+* Project Tool
 
 ### Project About
 
