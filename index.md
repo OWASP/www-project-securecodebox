@@ -39,4 +39,4 @@ As of **Mai, 2019, the highest priorities for the next 6 months** are:
 
 ## Licensing
 
-This Project is free software: you can redistribute it and/or modify it under the terms of the [Apache License 2.0](https://github.com/secureCodeBox/secureCodeBox/blob/master/LICENSE). OWASP secureCodeBox Project and any contributions are Copyright © by {the Project Leader(s) or OWASP} {Year(s)}.
+This Project is free software: you can redistribute it and/or modify it under the terms of the [Apache License 2.0](https://github.com/secureCodeBox/secureCodeBox/blob/master/LICENSE). OWASP secureCodeBox Project and any contributions are Copyright © by iteratec GmbH 2015-2020.
