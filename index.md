@@ -105,7 +105,7 @@ This Project is free software: you can redistribute it and/or modify it under th
 [scb-github]: https://github.com/secureCodeBox/secureCodeBox
 [scbv2-github]: https://github.com/secureCodeBox/secureCodeBox-v2
 [scb-twitter]: https://twitter.com/secureCodeBox
-[scb-slack]: https://join.slack.com/t/securecodebox/shared_invite/enQtNDU3MTUyOTM0NTMwLTJiNzg3MmU2ZDY2NDFiMGI0Y2FkM2I5Mzc2ZmEzYTcyN2FlN2Y2NDFiZDE5NjAxMjg1M2IxNDViNzE3OTIxMGU
+[scb-slack]: https://join.slack.com/t/securecodebox/shared_invite/enQtNDU3MTUyOTM0NTMwLTBjOWRjNjVkNGEyMjQ0ZGMyNDdlYTQxYWQ4MzNiNGY3MDMxNThkZjJmMzY2NDRhMTk3ZWM3OWFkYmY1YzUxNTU
 [scb-license]: https://github.com/secureCodeBox/secureCodeBox/blob/master/LICENSE
 
 
