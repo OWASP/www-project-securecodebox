@@ -46,32 +46,32 @@ Deploy the secureCodeBox operator first:
 ```bash
 helm repo add securecodebox https://charts.securecodebox.io
 kubectl create namespace securecodebox-system
-helm -n securecodebox-system upgrade --install securecodebox/operator --devel
+helm -n securecodebox-system upgrade --install securecodebox-operator securecodebox/operator --devel
 ```
 
 Optionally deploy SCB scanner charts for each security scanner you want to use. They should not be installed into the `securecodebox-system` like the operator so that different teams can use different kinds of scanners.
 To get more informations about each scanner and hook please have a look at our [Website][scb-website-integrations] or the corresponding [GitHub Repo secureCodeBox V2][scbv2-github].
 
 ```bash
-helm upgrade --install securecodebox/amass --devel
-helm upgrade --install securecodebox/kube-hunter --devel
-helm upgrade --install securecodebox/nikto --devel
-helm upgrade --install securecodebox/nmap --devel
-helm upgrade --install securecodebox/ssh-scan --devel
-helm upgrade --install securecodebox/sslyze --devel
-helm upgrade --install securecodebox/trivy --devel
-helm upgrade --install securecodebox/zap --devel
-helm upgrade --install securecodebox/wpscan --devel
+helm upgrade --install amass securecodebox/amass --devel
+helm upgrade --install kube-hunter securecodebox/kube-hunter --devel
+helm upgrade --install nikto securecodebox/nikto --devel
+helm upgrade --install nmap securecodebox/nmap --devel
+helm upgrade --install ssh-scan securecodebox/ssh-scan --devel
+helm upgrade --install sslyze securecodebox/sslyze --devel
+helm upgrade --install trivy securecodebox/trivy --devel
+helm upgrade --install zap securecodebox/zap --devel
+helm upgrade --install wpscan securecodebox/wpscan --devel
 ```
 
 Optional deploy some demo apps for scanning:
 
 ```bash
-helm upgrade --install securecodebox/dummy-ssh --devel
-helm upgrade --install securecodebox/bodgeit --devel
-helm upgrade --install securecodebox/juice-shop --devel
-helm upgrade --install securecodebox/old-wordpress --devel
-helm upgrade --install securecodebox/swagger-petstore --devel
+helm upgrade --install dummy-ssh securecodebox/dummy-ssh --devel
+helm upgrade --install bodgeit securecodebox/bodgeit --devel
+helm upgrade --install juice-shop securecodebox/juice-shop --devel
+helm upgrade --install old-wordpress securecodebox/old-wordpress --devel
+helm upgrade --install swagger-petstore securecodebox/swagger-petstore --devel
 ```
 
 Deploy secureCodeBox Hooks:
