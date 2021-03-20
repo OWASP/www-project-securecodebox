@@ -7,7 +7,7 @@
 * [Jannik Hollenbach](https://github.com/J12934)
 * [Sven Strittmatter](https://github.com/Weltraumschaf)
 * [Yannik Fuhrmeister](https://github.com/fuhrmeistery)
-### Contributer
+### Contributers
 
 * [Timo Pagel](https://github.com/wurstbrot)
 * [Benjamin Pfänder](https://github.com/bpfaender)

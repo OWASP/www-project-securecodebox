@@ -49,6 +49,7 @@ As of **Feb, 2021, the highest priorities for the next 12 months** are:
 - Finalize the deep integration with the OWASP DefectDojo Project, as a building block for security finding analytics
 - Implement a  secureCodeBox UI to visualize the security scan findings as an alternative to OWASP DefectDojo and Kibana (ELK Stack)
 - Integrate new Cloud specific security scanners for AWS, GCP, Azure, DigitalOcean
+
 ## Quickstart secureCodebox
 
 ### Deployment (based on Helm)
