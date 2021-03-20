@@ -4,88 +4,109 @@ title: OWASP secureCodeBox
 tags: scanner
 level: 2
 type: tool
-region: Unknown
 pitch: Automate all your security and vulnerability scanners.
 ---
 
 ![logo](assets/images/logo.png "Logo secureCodeBox")
 
-The OWASP secureCodeBox Project is a **kubernetes based, modularized toolchain** for _continuous security scans of your software project_. Its goal is to _orchestrate_ and easily _automate_ a bunch of _security-testing tools_ out of the box. With the secureCodeBox we provide a toolchain for continuous scanning of applications to find the low-hanging fruit issues early in the development process and free the resources of the penetration tester to concentrate on the major security issues.
+<p align="center">
+  <a href="https://opensource.org/licenses/Apache-2.0"><img alt="License Apache-2.0" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"></a>
+  <a href="https://github.com/secureCodeBox/secureCodeBox/releases/latest"><img alt="GitHub release (latest SemVer)" src="https://img.shields.io/github/v/release/secureCodeBox/secureCodeBox?sort=semver"></a>
+  <a href="https://owasp.org/www-project-securecodebox/"><img alt="OWASP Incubator Project" src="https://img.shields.io/badge/OWASP-Incubator%20Project-365EAA"></a>
+  <a href="https://twitter.com/securecodebox"><img alt="Twitter Follower" src="https://img.shields.io/twitter/follow/securecodebox?style=flat&color=blue&logo=twitter"></a>
+</p>
+<p align="center">
+  <a href="https://github.com/secureCodeBox/secureCodeBox/actions?query=workflow%3ACI"><img alt="Build" src="https://github.com/secureCodeBox/secureCodeBox/workflows/CI/badge.svg"></a>
+  <a href="https://codeclimate.com/github/secureCodeBox/secureCodeBox/maintainability"><img alt="Maintainability"  src="https://api.codeclimate.com/v1/badges/0c41659fde992429bfed/maintainability" /></a>
+  <a href="https://codeclimate.com/github/secureCodeBox/secureCodeBox/test_coverage"><img alt="Test Coverage" src="https://api.codeclimate.com/v1/badges/0c41659fde992429bfed/test_coverage" /></a>
+  <a href="https://snyk.io/test/github/secureCodeBox/secureCodeBox/"><img alt="Known Vulnerabilities" src="https://snyk.io/test/github/secureCodeBox/secureCodeBox/badge.svg"></a>
+  <a href="https://app.fossa.com/projects/git%2Bgithub.com%2FsecureCodeBox%2FsecureCodeBox?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2FsecureCodeBox%2FsecureCodeBox.svg?type=shield"/></a>
+</p>
+
+> The OWASP secureCodeBox Project is a **kubernetes based, modularized toolchain** for _continuous security scans of your software project_. Its goal is to _orchestrate_ and easily _automate_ a bunch of _security-testing tools_ out of the box. With the secureCodeBox we provide a toolchain for continuous scanning of applications to find the low-hanging fruit issues early in the development process and free the resources of the penetration tester to concentrate on the major security issues.
 
 ![laptop with dashboard](assets/images/laptop_with_dashboard.png "Example dashboard")
 
 ## Description
 
-The purpose of secureCodeBox is not to replace the penetration testers or make them obsolete. We strongly recommend to run extensive tests by experienced penetration testers on all your applications. For more informations about this project please have look at our [GitHub Repo secureCodeBox V1][scb-github] or our new Major Release [GitHub Repo secureCodeBox V2][scbv2-github]
+The purpose of secureCodeBox is not to replace the penetration testers or make them obsolete. We strongly recommend to run extensive tests by experienced penetration testers on all your applications. For more informations about this project please have look at our [GitHub Repo secureCodeBox][scb-github] or [online documentation][scb-documentation].
 
-Our main goal is to implement a major security testing platform and framework which enables developers and teams to integrate a bunch of security testing tools in their CI/CD environment or kubernetes environment as easy as possible. The flexibility and scalability of the platform architecture leads to features like _multi tenancy support_, _large scale (multi-) project testing_, support of distributed and private networks, customisable security test flows,... which enables projects to test complex environments without implementing the complete security testing infrastructure on their own.
+Our _main goal_ is to implement a major security testing platform and framework which enables developers and teams to integrate a bunch of security testing tools in their CI/CD environment or kubernetes environment as easy as possible. The flexibility and scalability of the platform architecture leads to features like _multi tenancy support_, _large scale (multi-) project testing_, support of distributed and private networks, customisable security test flows,... which enables projects to test complex environments without implementing the complete security testing infrastructure on their own.
 
 Secondly we try to foster a broad range of security tools to be easily integrated. Also we will try to integrate existing OWASP Projects as building blocks in our platform.
 
-## Roadmap
-
-### New Major Release V2
-Currently we are working heavily on a new major release with an complete new architecture of the secureCodeBox Project which is based on kubernetes. The major release of SCB version 2.0 will be available in the next weeks. The release will contain a major architecture change which will not be backward compatible. More details will follow soon in a series of blog articles.
-
-The new architecture is based on Kubernetes CRDs and follows an function as a service (FaaS) principle. Therefore we impleted an Kubernetes operator which schedules scan jobs as kubernetes jobs. This architecture leeds to a much more ressource efficiency. Instead of long running microservice (SCB v1 Architecture) scans only consume cluster ressource for a short amount of time.  
+### Architecture
 
 ![SCBv2 Architecture Overview](assets/images/scbv2-architecture.svg "SCBv2 Architecture Overview")
 
-As of **August, 2020, the highest priorities for the next 6 months** are:
+The secureCodeBox architecture is based on Kubernetes Custom Ressource Definitions (CRDs) and follows an function as a service (FaaS) principle. Therefore we impleted an Kubernetes operator which schedules _security scans_ as _kubernetes jobs_. This architecture leeds to a much more ressource efficiency. Instead of long running microservice (SCB v1 Architecture) scans only consume cluster ressource for a short amount of time.  
 
-- Finalize the Major Release V2 and switch the complete project to a kubernetes based FaaS architecture
-- Finalize the integration with the OWASP DefectDojo Project, as a building block for security finding analytics
-- Implement a permanend UI to visualize the security scan findings as an alternative to DefectDojo and Kibana (ELK Stack)
-- Finalize an kubernetes based *autodiscovery* for all ressource currently running in an kubernetes cluster
+## Roadmap
 
-## Quickstart secureCodebox V2
+As of **Feb, 2021, the highest priorities for the next 12 months** are:
+
+- Finalize a new kubernetes *autodiscovery* service which is capable of generating new secureCodeBox Scans based on existing or newly spawned kubernetes ressources.
+- Finalize the deep integration with the OWASP DefectDojo Project, as a building block for security finding analytics
+- Implement a  secureCodeBox UI to visualize the security scan findings as an alternative to OWASP DefectDojo and Kibana (ELK Stack)
+- Integrate new Cloud specific security scanners for AWS, GCP, Azure, DigitalOcean
+## Quickstart secureCodebox
 
 ### Deployment (based on Helm)
 Deploy the secureCodeBox operator first:
 
 ```bash
-helm repo add securecodebox https://charts.securecodebox.io
+# Add the secureCodeBox Helm Repo
+helm repo add secureCodeBox https://charts.securecodebox.io
+
+# Create a new namespace for the secureCodeBox Operator
 kubectl create namespace securecodebox-system
-helm -n securecodebox-system upgrade --install securecodebox-operator securecodebox/operator --devel
+
+# Install the Operator & CRD's
+helm --namespace securecodebox-system upgrade --install securecodebox-operator secureCodeBox/operator
 ```
 
 Optionally deploy SCB scanner charts for each security scanner you want to use. They should not be installed into the `securecodebox-system` like the operator so that different teams can use different kinds of scanners.
-To get more informations about each scanner and hook please have a look at our [Website][scb-website-integrations] or the corresponding [GitHub Repo secureCodeBox V2][scbv2-github].
+To get more informations about each scanner and hook please have a look at our [Documentation Website][scb-website-integrations] or the corresponding [GitHub Repo secureCodeBox][scb-github].
 
 ```bash
-helm upgrade --install amass securecodebox/amass --devel
-helm upgrade --install kube-hunter securecodebox/kube-hunter --devel
-helm upgrade --install nikto securecodebox/nikto --devel
-helm upgrade --install nmap securecodebox/nmap --devel
-helm upgrade --install ssh-scan securecodebox/ssh-scan --devel
-helm upgrade --install sslyze securecodebox/sslyze --devel
-helm upgrade --install trivy securecodebox/trivy --devel
-helm upgrade --install zap securecodebox/zap --devel
-helm upgrade --install wpscan securecodebox/wpscan --devel
+# The following chart will be installed in the `default` namespace by you can choose the namespace of your choice by
+# adding `--namespace YOURNAMESPACE` to each line
+helm upgrade --install amass secureCodeBox/amass
+helm upgrade --install gitleaks secureCodeBox/gitleaks
+helm upgrade --install kube-hunter secureCodeBox/kube-hunter
+helm upgrade --install nikto secureCodeBox/nikto
+helm upgrade --install nmap secureCodeBox/nmap
+helm upgrade --install ssh-scan secureCodeBox/ssh_scan
+helm upgrade --install sslyze secureCodeBox/sslyze
+helm upgrade --install trivy secureCodeBox/trivy
+helm upgrade --install wpscan secureCodeBox/wpscan
+helm upgrade --install zap secureCodeBox/zap
 ```
 
 Optional deploy some demo apps for scanning:
 
 ```bash
-helm upgrade --install dummy-ssh securecodebox/dummy-ssh --devel
-helm upgrade --install bodgeit securecodebox/bodgeit --devel
-helm upgrade --install juice-shop securecodebox/juice-shop --devel
-helm upgrade --install old-wordpress securecodebox/old-wordpress --devel
-helm upgrade --install swagger-petstore securecodebox/swagger-petstore --devel
+helm upgrade --install dummy-ssh securecodebox/dummy-ssh
+helm upgrade --install bodgeit securecodebox/bodgeit
+helm upgrade --install juice-shop securecodebox/juice-shop
+helm upgrade --install old-wordpress securecodebox/old-wordpress
+helm upgrade --install swagger-petstore securecodebox/swagger-petstore
 ```
 
 Deploy secureCodeBox Hooks:
 
 ```bash
-helm upgrade --install ufh securecodebox/update-field-hook --devel
-helm upgrade --install gwh securecodebox/generic-webhook --devel
-helm upgrade --install dssh securecodebox/declarative-subsequent-scans --devel
+helm upgrade --install ufh securecodebox/update-field-hook
+helm upgrade --install gwh securecodebox/generic-webhook
+helm upgrade --install dssh secureCodeBox/declarative-subsequent-scans
 ```
 
 Persistence provider Elasticsearch:
 
 ```bash
-helm upgrade --install elkh securecodebox/persistence-elastic --devel
+helm upgrade --install elkh securecodebox/persistence-elastic
+helm upgrade --install dd secureCodeBox/persistence-defectdojo \
+    --set="defectdojo.url=https://defectdojo-django.default.svc"
 ```
 
 ## Community
@@ -96,14 +117,18 @@ You are welcome, please join us on... 👋
 - [Slack][scb-slack]
 - [Twitter][scb-twitter]
 
+### Contributors
+
+[![GitHub contributors](https://img.shields.io/github/contributors/secureCodeBox/secureCodeBox.svg)](https://github.com/secureCodeBox/secureCodeBox/graphs/contributors)
+
 ## Licensing
 
-This Project is free software: you can redistribute it and/or modify it under the terms of the [Apache License 2.0](https://github.com/secureCodeBox/secureCodeBox/blob/master/LICENSE). OWASP secureCodeBox Project and any contributions are Copyright © by [iteratec GmbH](https://www.iteratec.com) 2015-2020.
+This Project is free software: you can redistribute it and/or modify it under the terms of the [Apache License 2.0](https://github.com/secureCodeBox/secureCodeBox/blob/master/LICENSE). OWASP secureCodeBox Project and any contributions are Copyright © by [iteratec GmbH](https://www.iteratec.com) 2015-2021.
 
 [scb-website]: https://www.securecodebox.io/
-[scb-website-integrations]: https://www.securecodebox.io/integrations
+[scb-documentation]: https://docs.securecodebox.io/
+[scb-website-integrations]: https://docs.securecodebox.io/docs/scanners
 [scb-github]: https://github.com/secureCodeBox/secureCodeBox
-[scbv2-github]: https://github.com/secureCodeBox/secureCodeBox-v2
 [scb-twitter]: https://twitter.com/secureCodeBox
 [scb-slack]: https://join.slack.com/t/securecodebox/shared_invite/enQtNDU3MTUyOTM0NTMwLTBjOWRjNjVkNGEyMjQ0ZGMyNDdlYTQxYWQ4MzNiNGY3MDMxNThkZjJmMzY2NDRhMTk3ZWM3OWFkYmY1YzUxNTU
 [scb-license]: https://github.com/secureCodeBox/secureCodeBox/blob/master/LICENSE
