@@ -122,7 +122,7 @@ You are welcome, please join us on... 👋
 
 ## Licensing
 
-This Project is free software: you can redistribute it and/or modify it under the terms of the [Apache License 2.0](https://github.com/secureCodeBox/secureCodeBox/blob/master/LICENSE). OWASP secureCodeBox Project and any contributions are Copyright © by [iteratec GmbH](https://www.iteratec.com) 2015-2021.
+This Project is free software: you can redistribute it and/or modify it under the terms of the [Apache License 2.0](https://github.com/secureCodeBox/secureCodeBox/blob/master/LICENSE). OWASP secureCodeBox Project and any contributions are Copyright by the secureCodeBox authors.
 
 [scb-website]: https://www.securecodebox.io/
 [scb-documentation]: https://docs.securecodebox.io/
