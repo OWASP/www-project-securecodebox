@@ -1,6 +1,6 @@
 ### Leaders
 
-* [Robert Seedorff](https://github.com/rseedorff)
+* [Robert Seedorff](robert.seedorff@owasp.org)
 
 ### Maintainers
 
