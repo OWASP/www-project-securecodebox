@@ -2,7 +2,7 @@
 layout: col-sidebar
 title: OWASP secureCodeBox
 tags: scanner
-level: 2
+level: 3
 type: tool
 pitch: Automate all your security and vulnerability scanners.
 ---
