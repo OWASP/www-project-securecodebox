@@ -1,6 +1,6 @@
 ### Leaders
 
-* [Robert Seedorff](robert.seedorff@owasp.org)
+* [Robert Felber](robert.seedorff@owasp.org)
 
 ### Maintainers
 
