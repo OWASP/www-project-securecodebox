@@ -1,6 +1,6 @@
 ### Project Information
 
-* Project Incubator
+* Lab Project
 
 #### Classification
 
