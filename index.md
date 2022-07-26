@@ -41,12 +41,7 @@ The secureCodeBox architecture is based on Kubernetes Custom Ressource Definitio
 
 ## Roadmap
 
-As of **Feb, 2021, the highest priorities for the next 12 months** are:
-
-- Finalize a new kubernetes *autodiscovery* service which is capable of generating new secureCodeBox Scans based on existing or newly spawned kubernetes resources.
-- Finalize the deep integration with the OWASP DefectDojo Project, as a building block for security finding analytics
-- Implement a  secureCodeBox UI to visualize the security scan findings as an alternative to OWASP DefectDojo and Kibana (ELK Stack)
-- Integrate new Cloud specific security scanners for AWS, GCP, Azure, DigitalOcean
+Our [project roadmap][scb-roadmap-doc] is documented on our [documentation site][scb-documentation] in the [architecture section][scb-architecture-doc]
 
 ## Quickstart secureCodeBox
 
@@ -70,6 +65,8 @@ This Project is free software: you can redistribute it and/or modify it under th
 
 [scb-website]: https://www.securecodebox.io/
 [scb-documentation]: https://docs.securecodebox.io/
+[scb-architecture-doc]: https://docs.securecodebox.io/docs/architecture/
+[scb-roadmap-doc]: https://docs.securecodebox.io/docs/architecture/#road-map
 [scb-installation-doc]: https://docs.securecodebox.io/docs/getting-started/installation
 [scb-starting-scan-doc]: https://docs.securecodebox.io/docs/getting-started/first-scans
 [scb-website-integrations]: https://docs.securecodebox.io/docs/scanners
