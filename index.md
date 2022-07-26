@@ -29,7 +29,7 @@ pitch: Automate all your security and vulnerability scanners.
 
 The purpose of secureCodeBox is not to replace the penetration testers or make them obsolete. We strongly recommend to run extensive tests by experienced penetration testers on all your applications. For more information about this project, please have look at our [GitHub Repo secureCodeBox][scb-github] or [online documentation][scb-documentation].
 
-Our _main goal_ is to implement a major security testing platform and framework which enables developers and teams to integrate a bunch of security testing tools in their CI/CD environment or kubernetes environment as easy as possible. The flexibility and scalability of the platform architecture leads to features like _multi tenancy support_, _large scale (multi-) project testing_, support of distributed and private networks, customisable security test flows, which enables projects to test complex environments without implementing the complete security testing infrastructure on their own.
+Our _main goal_ is to implement a major security testing platform and framework which enables developers and teams to integrate a bunch of security testing tools in their CI/CD environment or kubernetes environment as easy as possible. The flexibility and scalability of the platform architecture leads to features like _multi tenancy support_, _large scale (multi-) project testing_, support of distributed and private networks, customizable security test flows, which enables projects to test complex environments without implementing the complete security testing infrastructure on their own.
 
 Secondly we try to foster a broad range of security tools to be easily integrated. Also we will try to integrate existing OWASP Projects as building blocks in our platform.
 
@@ -43,7 +43,7 @@ The secureCodeBox architecture is based on Kubernetes Custom Ressource Definitio
 
 As of **Feb, 2021, the highest priorities for the next 12 months** are:
 
-- Finalize a new kubernetes *autodiscovery* service which is capable of generating new secureCodeBox Scans based on existing or newly spawned kubernetes ressources.
+- Finalize a new kubernetes *autodiscovery* service which is capable of generating new secureCodeBox Scans based on existing or newly spawned kubernetes resources.
 - Finalize the deep integration with the OWASP DefectDojo Project, as a building block for security finding analytics
 - Implement a  secureCodeBox UI to visualize the security scan findings as an alternative to OWASP DefectDojo and Kibana (ELK Stack)
 - Integrate new Cloud specific security scanners for AWS, GCP, Azure, DigitalOcean
