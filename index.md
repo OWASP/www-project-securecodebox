@@ -48,65 +48,9 @@ As of **Feb, 2021, the highest priorities for the next 12 months** are:
 - Implement a  secureCodeBox UI to visualize the security scan findings as an alternative to OWASP DefectDojo and Kibana (ELK Stack)
 - Integrate new Cloud specific security scanners for AWS, GCP, Azure, DigitalOcean
 
-## Quickstart secureCodebox
+## Quickstart secureCodeBox
 
-### Deployment (based on Helm)
-Deploy the secureCodeBox operator first:
-
-```bash
-# Add the secureCodeBox Helm Repo
-helm repo add secureCodeBox https://charts.securecodebox.io
-
-# Create a new namespace for the secureCodeBox Operator
-kubectl create namespace securecodebox-system
-
-# Install the Operator & CRD's
-helm --namespace securecodebox-system upgrade --install securecodebox-operator secureCodeBox/operator
-```
-
-Optionally deploy SCB scanner charts for each security scanner you want to use. They should not be installed into the `securecodebox-system` like the operator so that different teams can use different kinds of scanners.
-To get more informations about each scanner and hook please have a look at our [Documentation Website][scb-website-integrations] or the corresponding [GitHub Repo secureCodeBox][scb-github].
-
-```bash
-# The following chart will be installed in the `default` namespace by you can choose the namespace of your choice by
-# adding `--namespace YOURNAMESPACE` to each line
-helm upgrade --install amass secureCodeBox/amass
-helm upgrade --install gitleaks secureCodeBox/gitleaks
-helm upgrade --install kube-hunter secureCodeBox/kube-hunter
-helm upgrade --install nikto secureCodeBox/nikto
-helm upgrade --install nmap secureCodeBox/nmap
-helm upgrade --install ssh-scan secureCodeBox/ssh_scan
-helm upgrade --install sslyze secureCodeBox/sslyze
-helm upgrade --install trivy secureCodeBox/trivy
-helm upgrade --install wpscan secureCodeBox/wpscan
-helm upgrade --install zap secureCodeBox/zap
-```
-
-Optional deploy some demo apps for scanning:
-
-```bash
-helm upgrade --install dummy-ssh securecodebox/dummy-ssh
-helm upgrade --install bodgeit securecodebox/bodgeit
-helm upgrade --install juice-shop securecodebox/juice-shop
-helm upgrade --install old-wordpress securecodebox/old-wordpress
-helm upgrade --install swagger-petstore securecodebox/swagger-petstore
-```
-
-Deploy secureCodeBox Hooks:
-
-```bash
-helm upgrade --install ufh securecodebox/update-field-hook
-helm upgrade --install gwh securecodebox/generic-webhook
-helm upgrade --install dssh secureCodeBox/declarative-subsequent-scans
-```
-
-Persistence provider Elasticsearch:
-
-```bash
-helm upgrade --install elkh securecodebox/persistence-elastic
-helm upgrade --install dd secureCodeBox/persistence-defectdojo \
-    --set="defectdojo.url=https://defectdojo-django.default.svc"
-```
+For a quickstart see our [installation documentation][scb-installation-doc] and the [starting your first scan documentation][scb-starting-scan-doc] on our comprehensive [documentation site][scb-documentation].
 
 ## Community
 
@@ -126,6 +70,8 @@ This Project is free software: you can redistribute it and/or modify it under th
 
 [scb-website]: https://www.securecodebox.io/
 [scb-documentation]: https://docs.securecodebox.io/
+[scb-installation-doc]: https://docs.securecodebox.io/docs/getting-started/installation
+[scb-starting-scan-doc]: https://docs.securecodebox.io/docs/getting-started/first-scans
 [scb-website-integrations]: https://docs.securecodebox.io/docs/scanners
 [scb-github]: https://github.com/secureCodeBox/secureCodeBox
 [scb-twitter]: https://twitter.com/secureCodeBox
