@@ -24,7 +24,7 @@
 
 - [OWASP AMASS](https://owasp.org/www-project-amass/)
 - [OWASP JuiceShop Project](https://owasp.org/www-project-juice-shop/)
-- [OWASP ZAP Project](https://owasp.org/www-project-zap)
+- [ZAP Project](https://zaproxy.org/)
 - [OWASP DefectDojo Project](https://owasp.org/www-project-defectdojo)
 
 ### Related Projects
