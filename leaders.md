@@ -1,12 +1,15 @@
 ### Leaders
 
 * [Robert Felber](robert.seedorff@owasp.org)
+* [Jannik Hollenbach](jannik.hollenbach@owasp.org)
+* [Sven Strittmatter](sven.strittmatter@owasp.org)
 
 ### Maintainers
 
 * [Jannik Hollenbach](https://github.com/J12934)
 * [Sven Strittmatter](https://github.com/Weltraumschaf)
 * [Yannik Fuhrmeister](https://github.com/fuhrmeistery)
+
 ### Contributers
 
 * [Timo Pagel](https://github.com/wurstbrot)
