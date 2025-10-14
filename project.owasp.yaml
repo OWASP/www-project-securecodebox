@@ -17,13 +17,7 @@ leaders:
     github: Weltraumschaf
 level: 3
 license:
-  - AGPL-3.0
   - Apache-2.0
-  - BSD-3-Clause
-  - GPL-2.0
-  - GPL-3.0
-  - MIT
-  - MPL-2.0
 name: OWASP secureCodeBox
 pitch: Automate all your security and vulnerability scanners.
 repositories:
