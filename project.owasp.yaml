@@ -35,5 +35,8 @@ repositories:
     description: Service to collect anonymous telemetry data from secureCodeBox installations
 tags:
   - scanner
+  - orchestration
+  - vulnerabilities
+  - kubernetes
 type: tool
 website: https://www.securecodebox.io
