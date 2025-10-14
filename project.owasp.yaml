@@ -21,61 +21,18 @@ license:
 name: OWASP secureCodeBox
 pitch: Automate all your security and vulnerability scanners.
 repositories:
+  - name: secureCodeBox
+    url: https://github.com/secureCodeBox/secureCodeBox
+    description: 'secureCodeBox (SCB) - continuous secure delivery out of the box'
   - name: www-project-securecodebox
     url: https://github.com/OWASP/www-project-securecodebox
     description: OWASP Foundation Web Repository
   - name: defectdojo-client-java
     url: https://github.com/secureCodeBox/defectdojo-client-java
     description: This repo contains a OWASP DefectDojo API Client based on Java.
-  - name: DevSecOps-MaturityModel
-    url: https://github.com/secureCodeBox/DevSecOps-MaturityModel
-  - name: django-DefectDojo
-    url: https://github.com/secureCodeBox/django-DefectDojo
-    description: DefectDojo is an open-source application vulnerability correlation and security orchestration tool.
-  - name: gitleaks
-    url: https://github.com/secureCodeBox/gitleaks
-    description: Scan git repos (or files) for secrets using regex and entropy 🔑
-  - name: kubeaudit
-    url: https://github.com/secureCodeBox/kubeaudit
-    description: kubeaudit helps you audit your Kubernetes clusters against common security controls
-  - name: landscape
-    url: https://github.com/secureCodeBox/landscape
-    description: 🌄 The Cloud Native Interactive Landscape filters and sorts hundreds of projects and products, and shows details including GitHub stars,
-      funding or market cap, first and last commits, contributor counts, headquarters location, and recent tweets.
-  - name: nikto
-    url: https://github.com/secureCodeBox/nikto
-    description: Nikto web server scanner
-  - name: scan-deduplicator
-    url: https://github.com/secureCodeBox/scan-deduplicator
-    description: Experimental stanalone webhook to block scans which have already been executed recently
-  - name: scb-cascades-demo
-    url: https://github.com/secureCodeBox/scb-cascades-demo
-  - name: secureCodeBox
-    url: https://github.com/secureCodeBox/secureCodeBox
-    description: 'secureCodeBox (SCB) - continuous secure delivery out of the box '
-  - name: securecodebox.github.io
-    url: https://github.com/secureCodeBox/securecodebox.github.io
-    description: Sources of the securecodebox.io website
-  - name: ssh_scan
-    url: https://github.com/secureCodeBox/ssh_scan
-    description: 'A prototype SSH configuration and policy scanner (Blog: https://mozilla.github.io/ssh_scan/)'
-  - name: sslyze
-    url: https://github.com/secureCodeBox/sslyze
-    description: Fast and powerful SSL/TLS scanning library.
-  - name: swagger-petstore-openshift
-    url: https://github.com/secureCodeBox/swagger-petstore-openshift
   - name: telemetry
     url: https://github.com/secureCodeBox/telemetry
     description: Service to collect anonymous telemetry data from secureCodeBox installations
-  - name: www-community
-    url: https://github.com/secureCodeBox/www-community
-    description: OWASP Community Pages are a place where OWASP can accept community contributions for security-related content.
-  - name: zap-extensions
-    url: https://github.com/secureCodeBox/zap-extensions
-    description: OWASP ZAP Add-ons
-  - name: zaproxy
-    url: https://github.com/secureCodeBox/zaproxy
-    description: The OWASP ZAP core project
 tags:
   - scanner
 type: tool
