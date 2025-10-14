@@ -1,0 +1,42 @@
+audience:
+  - breaker
+  - builder
+  - defender
+community:
+  - name: project-securecodebox
+    platform: slack
+    url: https://owasp.slack.com/archives/C062TQANH3N
+    description: "<https://github.com/secureCodeBox/>\nPrimary communication medium is github discussions\n(We've previosuly maintained our own slack workspace)\n\
+      Feel free to still use this channel but the team might be a bit slow to respond :slightly_smiling_face:"
+leaders:
+  - name: Robert Felber
+    email: robert.seedorff@owasp.org
+  - name: Jannik Hollenbach
+    github: J12934
+  - name: Sven Strittmatter
+    github: Weltraumschaf
+level: 3
+license:
+  - Apache-2.0
+name: OWASP secureCodeBox
+pitch: Automate all your security and vulnerability scanners.
+repositories:
+  - name: secureCodeBox
+    url: https://github.com/secureCodeBox/secureCodeBox
+    description: 'secureCodeBox (SCB) - continuous secure delivery out of the box'
+  - name: www-project-securecodebox
+    url: https://github.com/OWASP/www-project-securecodebox
+    description: OWASP Foundation Web Repository
+  - name: defectdojo-client-java
+    url: https://github.com/secureCodeBox/defectdojo-client-java
+    description: This repo contains a OWASP DefectDojo API Client based on Java.
+  - name: telemetry
+    url: https://github.com/secureCodeBox/telemetry
+    description: Service to collect anonymous telemetry data from secureCodeBox installations
+tags:
+  - scanner
+  - orchestration
+  - vulnerabilities
+  - kubernetes
+type: tool
+website: https://www.securecodebox.io
