@@ -84,7 +84,5 @@ repositories:
     description: The OWASP ZAP core project
 tags:
   - scanner
-  - custom-tag-1
-  - custom-tag-2
 type: tool
 website: https://www.securecodebox.io
